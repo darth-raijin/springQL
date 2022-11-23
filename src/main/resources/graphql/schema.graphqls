@@ -1,0 +1,17 @@
+type Player {
+    id: ID
+    level: String
+    name: String
+    geography: String
+}
+
+type Match {
+    id: ID
+    players: [Player]
+}
+
+type Query {
+    allPlayers: [Player]
+    allPlayersForMatch(id: String): [Player]
+    allPlayersBySkill(skill: String): [Player]    
+}

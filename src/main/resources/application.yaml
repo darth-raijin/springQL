@@ -1,0 +1,9 @@
+springdoc:
+  swagger-ui.path: /
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+logging:
+    file:
+      name: ./logs/springql.log
